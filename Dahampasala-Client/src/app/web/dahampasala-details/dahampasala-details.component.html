@@ -1,0 +1,14 @@
+<div *ngIf="dahampasala">
+    <H2>{{dahampasala.name | uppercase}}</H2>
+    <div><span>ID: </span>{{dahampasala.id}}</div>
+    <div><label>Name:
+            <input [(ngModel)]="dahampasala.name" placeholder="name" /></label></div>
+    <div><label>Address ID:
+            <input [(ngModel)]="dahampasala.defAddressId" placeholder="defAddressId" /></label></div>
+    <div><label>Principal ID:
+            <input [(ngModel)]="dahampasala.principleId" placeholder="principleId" /></label></div>
+
+    <div class="Operation List">
+        <button mat-raised-button (click)="update()">Save</button>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="example-container mat-elevation-z8">
+    <div class="table-title">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manage <b>Address</b></h2>
+            </div>
+            <div class="col-sm-6">
+                <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+                        class="material-icons">&#xE147;</i> <span>New</span></a>
+                <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
+                        class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <span class="custom-checkbox">
+                        <input type="checkbox" id="selectAll">
+                        <label for="selectAll"></label>
+                    </span>
+                </th>
+                <th scope="col">Address ID</th>
+                <th scope="col">Address Line 1</th>
+                <th scope="col">Address Line 2</th>
+                <th scope="col">Address Line 3</th>
+                <th scope="col">Address Line 4</th>
+                <th scope="col">Address Line 5</th>
+                <th scope="col">Address Line 6</th>
+                <th scope="col">Location Id</th>
+                <th scope="col">Home Phone</th>
+                <th scope="col">Mobile Phone</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let address of addressList">
+                <td>
+                    <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                        <label for="checkbox1"></label>
+                    </span>
+                </td>
+                <td>{{address.id}}</td>
+                <td>{{address.address1}}</td>
+                <td>{{address.address2}}</td>
+                <td>{{address.address3}}</td>
+                <td>{{address.address4}}</td>
+                <td>{{address.address5}}</td>
+                <td>{{address.address6}}</td>
+                <td>{{address.locationId}}</td>
+                <td>{{address.homePhone}}</td>
+                <td>{{address.mobilePhone1}}</td>
+                <td>
+                    <!-- <a href="/teacher/#editTeacherModal" class="edit" data-toggle="modal" data-target="#editTeacherModal"><i class="material-icons"
+                            data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+                            data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                            <!-- <button class="button" (click)="triggerModal(modalData)">Edit</button> -->
+                            
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

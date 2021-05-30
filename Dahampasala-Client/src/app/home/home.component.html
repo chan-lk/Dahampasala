@@ -1,0 +1,81 @@
+<div class="container">
+    <!-- <a href="/dahampasala" class="card-link" routerLink="dahampasala"></a> -->
+         <!-- <a href="http://google.com"> -->
+             <div class="card">
+                <a href="/dahampasala">
+                    <h3 class="title">Dahampasala</h3>
+    
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="./dahampasala">
+        <h3 class="title">Students</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="./teacher">
+        <h3 class="title">Teachers</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+    </a>
+  </div>
+  <div class="card">
+    <a href="./address">
+      <h3 class="title">Address</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+    </a>
+  </div>
+
+  <button class="btn btn-danger" (click)="triggerModal(modalData)">Open Modal</button>
+
+  <ng-template #modalData let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Angular Bootstrap Modal Popup</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Are you sure you want to delete <span class="text-primary">"Agatha Harkness"</span> profile?</strong></p>
+      
+      <p>All data related to west view profile will be removed permanently.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" (click)="modal.close('Save click')">Close</button>
+    </div>
+  </ng-template>
+</div>
